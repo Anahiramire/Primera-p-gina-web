@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root{
+    --color-fondo:#91DDCF; 
+    --color-texto:#EB3678;
+    --color-botones:#7A1CAC;
+    --color-resaltado:#4F1787;
+
+    --texto-parrafo:"Montserrat", sans-serif;
+    --texto-header:"Krona One", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--color-fondo);   
+    color: var(--color-texto);
+    box-sizing: border-box;
+}
+.header{
+    padding: 3% 0% 0% 10%;
+}
+.barra_navegacion{
+    display: flex;
+    gap: 50px;
+}
+.barra_navegacion_enlaces{
+    font-family: var(--texto-parrafo);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-botones);
+    text-decoration: none;
+}
+.ana_Garcia{
+    display: flex;
+    align-items: center;
+    padding: 5% 5%;
+    justify-content: space-between;
+    gap:20px;
+}
+.texto{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.tamaño_titulo{
+    font-size: 2.25rem;
+    font-family: var(--texto-header);
+}
+.color_titulo{
+    color: var(--color-botones);
+}
+.tamaño_texto{
+    font-size: 1.5rem;
+    font-family: var(--texto-parrafo);
+}
+.enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.enlaces_mensaje{
+    font-size: 1.5rem;
+    font-family:  var(--texto-header);
+    font-weight: 400;
+}
+.boton_enlaces{
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--texto-parrafo);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-texto);
+    text-decoration: none;
+    border: 2px solid var(--color-botones);;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.boton_enlaces:hover{
+    background-color: var(--color-resaltado);
+}
+.ana_Garcia_imagen{
+    width: 50%;
+}
+.footer{
+    background-color: var(--color-botones);;
+    color: var(--color-fondo);  
+    padding: 24px;
+    font-family: var(--texto-parrafo);
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+@media (max-width:1200px){
+    .header{
+        padding: 10%;
+    }
+    .barra_navegacion{
+        justify-content: center;
+    }
+    .ana_Garcia{
+        flex-direction: column-reverse;
+        padding: 2%;
+    }
+    .texto{
+        width: auto;
+    }
+    
+}
